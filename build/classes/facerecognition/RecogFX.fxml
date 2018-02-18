@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.CheckBox?>
+
+<BorderPane prefHeight="642.0" prefWidth="590.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="facerecognition.FXController">
+   
+    <center>
+    <VBox alignment="CENTER" prefHeight="0.0" prefWidth="590.0">
+	    <padding>
+	    <Insets left="10" right="10" />
+	    </padding>
+   <children>
+            <Label fx:id="textRecog" prefHeight="129.0" prefWidth="541.0" />
+   	    <ImageView fx:id="originalFrame" />
+   </children>
+   </VBox>
+   </center>
+   <bottom>
+	<HBox alignment="CENTER">
+	    <padding>
+		<Insets bottom="25" left="25" right="25" top="25" />
+	    </padding>
+            <children>
+   	    <Button fx:id="cameraButton" alignment="center" disable="true" onAction="#startCamera" text="Start camera" />
+            <TextField fx:id="newUserName" prefHeight="25.0" prefWidth="130.0" promptText="Andrew ID">
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </TextField>
+            <Button fx:id="newUserNameSubmit" onAction="#newUserNameSubmitted" text="Register User">
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="stats" mnemonicParsing="false" onAction="#getStats" text="Get Stats">
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </Button>
+            </children>
+	</HBox>
+   </bottom>
+</BorderPane>

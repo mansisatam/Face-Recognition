@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="facerecognition.RegisterNewUserController">
+   <children>
+      <ImageView fx:id="originalFrame" fitHeight="307.0" fitWidth="294.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+      <VBox layoutX="315.0" layoutY="14.0" prefHeight="253.0" prefWidth="271.0">
+         <children>
+            <TextField fx:id="firstName" prefHeight="50.0" prefWidth="271.0" promptText="Firstname" />
+            <TextField fx:id="lastName" prefHeight="50.0" promptText="Lastname" />
+            <TextField fx:id="age" prefHeight="50.0" promptText="Age" />
+            <TextField fx:id="gender" prefHeight="50.0" promptText="Gender" />
+            <TextField fx:id="track" prefHeight="50.0" promptText="Track" />
+         </children>
+      </VBox>
+      <Button fx:id="register" layoutX="343.0" layoutY="286.0" mnemonicParsing="false" onAction="#registerUser" prefHeight="50.0" prefWidth="83.0" text="Register" />
+      <Button fx:id="back" layoutX="467.0" layoutY="286.0" mnemonicParsing="false" onAction="#getBackToFirst" prefHeight="50.0" prefWidth="83.0" text="Back" />
+      <Label fx:id="status" layoutX="318.0" layoutY="357.0" prefHeight="36.0" prefWidth="271.0" />
+   </children>
+</AnchorPane>

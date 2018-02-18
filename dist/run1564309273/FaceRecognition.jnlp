@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="FaceRecognition.jnlp">
+  <information>
+    <title>FaceRecognition</title>
+    <vendor>Siddharth</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" java-vm-args="-DJava.library.path="C:\Users\Siddharth\Downloads\opencv\build\java\x64\" "  href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="FaceRecognition.jar" size="32841" download="eager" />
+    <jar href="lib\derby.jar" size="3104883" download="eager" />
+    <jar href="lib\derbyclient.jar" size="585704" download="eager" />
+    <jar href="lib\derbynet.jar" size="266471" download="eager" />
+    <jar href="lib\mysql-connector-java-5.1.23-bin.jar" size="834126" download="eager" />
+    <jar href="lib\opencv-310.jar" size="324300" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="FaceRecognition" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="facerecognition.Main"  name="FaceRecognition" />
+  <update check="always"/>
+</jnlp>
